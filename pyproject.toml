@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "sfo"
+dynamic = ["version"]
+description = "Smart File Organizer - A safety-focused terminal utility for organizing files."
+authors = [
+    { name = "SFO Contributors" }
+]
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = []
+
+[project.scripts]
+sfo = "sfo.__main__:main"
+
+[tool.hatch.version]
+path = "sfo/__init__.py"

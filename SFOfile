@@ -1,0 +1,11 @@
+# Custom configuration file for SFO
+[Settings]
+skip_hidden = false
+
+[Rule]
+category = Important Docs
+extension = md
+
+[Rule]
+category = Important Docs
+extension = toml
